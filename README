@@ -1,0 +1,44 @@
+README: Neural Network for MNIST Classification
+
+Project Overview
+
+This project implements a simple two-layer neural network to classify handwritten digits from the MNIST dataset. The model processes 28x28 grayscale images (784 pixels) and predicts one of ten digit classes (0-9). The motivation? To justify adding COBOL to my CV.
+
+Network Architecture
+
+The neural network consists of:
+
+Input layer: 784 neurons (one per pixel)
+
+Hidden layer: 10 neurons with ReLU activation
+
+Output layer: 10 neurons with softmax activation
+
+The network is trained using a basic forward and backpropagation mechanism implemented in COBOL, because why not?
+
+Training Details
+
+Dataset: MNIST (train and test sets loaded from CSV files)
+
+Training epochs: 5 (assuming patience holds)
+
+Accuracy (so far):
+
+Epoch 1: 88.48%
+
+Epoch 2: 90.09%
+
+Epoch 3: 90.90%
+
+Epoch 4: 91.23%
+
+Epoch 5: 91.47%
+
+Running the Model
+
+To run the model, ensure you have a functioning COBOL environment . Then, execute the following steps:
+
+Compile the COBOL program.
+
+Run the executable.
+
