@@ -35,11 +35,22 @@ Not bad for a language designed in 1959!
 ### Prerequisites
 
 - GnuCOBOL (OpenCOBOL) compiler
-- MNIST dataset in CSV format
+- MNIST dataset in CSV format (not included due to size)
 
-### Dataset Preparation
+### Dataset Setup
 
-The MNIST dataset can be downloaded from [GTDLBench's MNIST datasets page](https://git-disl.github.io/GTDLBench/datasets/mnist_datasets/). Download the CSV versions for easier integration with this COBOL implementation.
+**Note:** The MNIST dataset files are not included in this repository due to their large size.
+
+1. Create a directory for the dataset:
+   ```
+   mkdir -p mnist
+   ```
+
+2. Download the CSV format MNIST files from [GTDLBench's MNIST datasets page](https://git-disl.github.io/GTDLBench/datasets/mnist_datasets/)
+
+3. Place the downloaded files in the mnist directory:
+   - `mnist/mnist_train.csv` (60,000 examples)
+   - `mnist/mnist_test.csv` (10,000 examples)
 
 ### Installation
 
@@ -51,7 +62,9 @@ The MNIST dataset can be downloaded from [GTDLBench's MNIST datasets page](https
 
 2. Ensure your COBOL environment is properly configured.
 
-3. Compile the main program:
+3. Set up the dataset as described above.
+
+4. Compile the main program:
    ```
    cobc -x -o mnist_nn Mnist.cob
    ```
@@ -70,13 +83,16 @@ Run the executable:
 ├── README            # Original README file
 ├── hello             # Example executable
 ├── hello.cob         # Example "Hello World" COBOL program
+├── mnist/            # Dataset directory (you need to create this)
+│   ├── mnist_train.csv  # Training dataset (to be downloaded)
+│   └── mnist_test.csv   # Testing dataset (to be downloaded)
 └── README.md         # This improved README
 ```
 
 ## 🔧 How It Works
 
 The program follows these steps:
-1. Loads MNIST data from CSV files
+1. Loads MNIST data from CSV files in the mnist directory
 2. Initializes network weights with small random values
 3. For each training epoch:
    - Performs forward propagation
