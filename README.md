@@ -20,15 +20,15 @@ All implemented in pure COBOL without external machine learning libraries.
 
 ## 📈 Training Performance
 
-| Epoch | Accuracy |
-|-------|----------|
-| 1     | 88.48%   |
-| 2     | 90.09%   |
-| 3     | 90.90%   |
-| 4     | 91.23%   |
-| 5     | 91.47%   |
+| Epoch | Accuracy_COBOL | Accuracy_Python | 
+|-------|----------|----------|
+| 1     | 88.48%   | 89.85%   |
+| 2     | 90.09%   | 91.16%   |
+| 3     | 90.90%   | 91.87%   |
+| 4     | 91.23%   | 92.13%   |
+| 5     | 91.47%   | 92.15%   |
 
-Not bad for a language designed in 1959!
+To validate the results, I recreated the model as faithfully as possible in Python. The comparable performance confirms the correctness of the COBOL implementation. Not bad for a language designed in 1959!
 
 ## 🚀 Getting Started
 
@@ -80,6 +80,7 @@ Run the executable:
 
 ```
 ├── Mnist.cob         # Main MNIST neural network implementation
+├── Mnist.py          # Python equivalent for comparison
 ├── README            # Original README file
 ├── hello             # Example executable
 ├── hello.cob         # Example "Hello World" COBOL program
