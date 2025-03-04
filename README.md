@@ -4,9 +4,9 @@
 
 ## 📊 Project Overview
 
-This project demonstrates that COBOL isn't just for legacy banking systems! I've implemented a fully-functional two-layer neural network to classify handwritten digits from the MNIST dataset. The model processes 28×28 grayscale images (784 pixels) and predicts digits 0-9 with surprising accuracy.
+This project demonstrates that COBOL isn't just for legacy banking systems! I've implemented a fully-functional two-layer neural network to classify handwritten digits from the MNIST dataset. The model processes 28×28 grayscale images (784 pixels) and predicts digits 0-9.
 
-*Why COBOL?* Because sometimes the best way to understand modern concepts is to implement them in an unexpected environment. Also, it makes for a great conversation starter in tech interviews!
+Why COBOL? Because its enduring legacy in critical systems makes it a fascinating challenge to explore. Plus, mastering an unexpected technology is a surefire way to spark interesting conversations in tech interviews!
 
 ## 🧠 Network Architecture
 
